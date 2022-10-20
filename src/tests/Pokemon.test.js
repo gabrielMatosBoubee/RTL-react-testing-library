@@ -15,7 +15,7 @@ test('Teste se é renderizado um card com as informações de determinado pokém
   expect(firstPkImg.src).toBe('https://cdn2.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png');
 });
 
-test('Teste se é renderizado um card com as informações de determinado pokémon:', () => {
+test('Teste se é renderizado cardDetais e se existe a foto fav', () => {
   const { getByAltText, getByText, history } = renderWithRouter(<App />);
   const MoreDetails = getByText('More details');
   userEvent.click(MoreDetails);
